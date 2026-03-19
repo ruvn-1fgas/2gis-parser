@@ -236,7 +236,6 @@ LIST_URL_TEMPLATE = (
     "&page_size={per_page}"
     "&rubric_id={rubric_id}"
     "&region_id={city_id}"
-    "&locale=ru_RU"
     f"&fields={','.join(FIELDS)}"
     "&key=rutnpt3272"
 )
@@ -246,10 +245,9 @@ SEARCH_URL_TEMPLATE = (
     "&page_size={per_page}"
     "&q={query}"
     "&region_id={city_id}"
-    "&locale=ru_RU"
     f"&fields={','.join(FIELDS)}"
     "&key=rutnpt3272"
 )
-REVIEWS_URL_TEMPLATE = "https://public-api.reviews.2gis.com/3.0/branches/{org_id}/reviews?limit={per_page}&offset={offset}&is_advertiser=false&fields=meta.providers,meta.branch_rating,meta.branch_reviews_count,meta.total_count,reviews.hiding_reason,reviews.emojis,reviews.trust_factors&without_my_first_review=false&rated=true&sort_by=friends&key=6e7e1929-4ea9-4a5d-8c05-d601860389bd&locale=ru_RU"
-MENUS_URL_TEMPLATE = "https://market-backend.api.2gis.ru/5.0/product/items_by_branch?branch_id={org_id}&locale=ru_RU&page={page}&page_size={per_page}&feature_config=categories_without_fake_first_level,range_price_type_supported,from_price_type_supported,fas_not_ad_text"
-MEDIA_URL_TEMPLATE = "https://api.photo.2gis.com/3.0/objects/{org_id}/albums/{album_type}/media?key=gYu1s9N1wP&page_size={per_page}&locale=ru_RU"
+REVIEWS_URL_TEMPLATE = "https://public-api.reviews.2gis.com/3.0/branches/{org_id}/reviews?limit={per_page}&offset={offset}&is_advertiser=false&fields=meta.providers,meta.branch_rating,meta.branch_reviews_count,meta.total_count,reviews.hiding_reason,reviews.emojis,reviews.trust_factors&without_my_first_review=false&rated=true&sort_by=friends&key=6e7e1929-4ea9-4a5d-8c05-d601860389bd"
+MENUS_URL_TEMPLATE = "https://market-backend.api.2gis.ru/5.0/product/items_by_branch?branch_id={org_id}&page={page}&page_size={per_page}&feature_config=categories_without_fake_first_level,range_price_type_supported,from_price_type_supported,fas_not_ad_text"
+MEDIA_URL_TEMPLATE = "https://api.photo.2gis.com/3.0/objects/{org_id}/albums/{album_type}/media?key=gYu1s9N1wP&page_size={per_page}"
